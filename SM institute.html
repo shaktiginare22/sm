@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" type="png" href="http://127.0.0.1:5500/logo.png">
+	
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>SM institute</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./SM institute_files/stylesheet.css">
+	<script type="text/javascript" src="./SM institute_files/script.js"></script>
+	<script src="./SM institute_files/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+<!-- 
+navigation bar -->
+
+<body><header id="header">
+  <nav>
+    <div class="logo"><img src="./SM institute_files/logo.jpeg" alt="logo"></div>
+    <ul>
+      <li><a class="active" href="http://127.0.0.1:5500/index.html">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#course">Syllabus</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#team_section">Materials</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#services_section">Notes</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#contactus_section">Contact us </a></li>
+    </ul>
+    <div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="./SM institute_files/search.png" alt="search" onclick="slide()"></div>
+    <a class="get-started" href="http://127.0.0.1:5500/login.html">Get Started</a>
+    <img src="./SM institute_files/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+  </nav>
+  <div class="head-container">
+    <div class="quote">
+      <p>The SM institute is a inspiration for all the students</p>
+      <h5>Our institute gives you a better skills, knowledge and many more you can join us its gives you perfect way</h5>
+     
+    </div>
+    <div class="svg-image">
+      <img src="./SM institute_files/headerimg.jpg" alt="institute">
+    </div>
+  </div>
+  <div class="side-menu" id="side-menu">
+    <div class="close" onclick="sideMenu(1)"><img src="http://127.0.0.1:5500/index.html" alt=""></div>
+    <div class="user">
+      <img src="http://127.0.0.1:5500/index.html" alt="Username">
+      <p>shaktiginare22</p>
+    </div>
+    <ul>
+      <li><a href="http://127.0.0.1:5500/index.html#">About</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#">Syllabus</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#team_section">Materials</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#">Notes</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#">Contact us</a></li>
+      <li><a href="http://127.0.0.1:5500/index.html#">Feedback</a></li>
+    </ul>
+  </div>
+</header>
+<!-- subjects -->
+<!-- Some Popular Subjects -->
+<div class="title">
+  <center><span id="subtitile">Popular Subjects </span></center>
+
+</div>
+<br><br>
+<div class="course" id="course">
+  &lt;<div class="cbox">
+  <div class="det"><a href="http://127.0.0.1:5500/subjects/jee.html"><img src="./SM institute_files/book.png">PHYSICS</a></div>
+  <div class="det"><a href="http://127.0.0.1:5500/subjects/gate.html"><img src="./SM institute_files/d1.png">CHEMISTRY</a></div>
+  <div class="det"><a href="http://127.0.0.1:5500/subjects/jee.html#sample_papers"><img src="./SM institute_files/paper.png">BIOLOGY</a></div>
+  <div class="det"><a href="http://127.0.0.1:5500/subjects/quiz.html"><img src="./SM institute_files/d1.png">MATHAMATICS</a></div>
+  </div>
+  
+</div>
+<!-- material -->
+
+<div class="diffSection" id="team_section">
+  <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Studie Materials</p></center>
+  <div class="totalcard">
+    <div class="card">
+      <center><img src="http://127.0.0.1:5500/index.html"></center>
+      <center><div class="card-title">NOTES</div>
+      <div id="detail">
+        <p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
+        <div class="duty"></div>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank"><button class="btn-roshan">READ MORE</button></a>
+      </div>
+      </center>
+    </div>
+    <div class="card">
+      <center><img src="http://127.0.0.1:5500/index.html"></center>
+      <center><div class="card-title">TEST SERIES</div></center>
+      <div id="detail">
+        <p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
+        <div class="duty"></div>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank"><button class="btn-akhil">READ MORE</button></a>
+      </div>
+      
+    </div>
+    <div class="card">
+      <center><img src="http://127.0.0.1:5500/index.html"></center>
+      <center><div class="card-title">SYLLABUS</div>
+      <div id="detail">
+        <p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
+        <div class="duty"></div>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank"><button class="btn-roshan">READ MORE</button></a>
+      </div>
+      </center>
+    </div>
+    <div class="card">
+      <center><img src="http://127.0.0.1:5500/index.html"></center>
+      <center><div class="card-title">COURCES</div>
+      <div id="detail">
+        <p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
+        <div class="duty"></div>
+        <a href="http://127.0.0.1:5500/index.html" target="_blank"><button class="btn-roshan">READ MORE</button></a>
+      </div>
+      </center>
+    </div>
+  </div>
+</div>
+
+<!-- FEEDBACK -->
+<center><div class="title2" id="feedBACK">
+  <span>Give Feedback</span>
+  <div class="shortdesc2">
+    <p>Please share your valuable feedback to us</p>
+  </div>
+</div></center>
+
+<div class="feedbox">
+  <div class="feed">
+    <form action="mailto:shaktiginare@gmail.com" method="post" enctype="text/plain">
+      <label>Your Name</label><br>
+      <input type="text" name="" class="fname" required="required"><br>
+      <label>Email</label><br>
+      <input type="email" name="mail" required="required"><br>
+      <label>Feedback</label><br>
+      <textarea name="addtional"></textarea><br>
+      <button type="submit" id="csubmit">Send Message</button>
+    </form>
+  </div>
+  
+</div>
+
+
+<!-- CONTACT US -->
+<div class="diffSection" id="contactus_section">
+  <center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+  <div class="csec"></div>
+  <div class="back-contact">
+    <div class="cc">
+    <form action="mailto:shaktiginare.com" method="post" enctype="text/plain">
+      <label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+      <center>
+      <input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+      </center>
+      <label>Email <span class="imp">*</span></label><br>
+      <input type="email" name="mail" style="width: 100%" required="required"><br>
+      <label>Message <span class="imp">*</span></label><br>
+      <input type="text" name="message" style="width: 100%" required="required"><br>
+      <label>Additional Details</label><br>
+      <textarea name="addtional"></textarea><br>
+      <button type="submit" id="csubmit">Send Message</button>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="left-col">
+      <img src="./SM institute_files/logo.jpeg" style="width: 150px;">
+      <div class="logo"></div>
+      <div class="social-media">
+        <a href="http://127.0.0.1:5500/index.html#"><img src="./SM institute_files/fb.png"></a>
+        <a href="http://127.0.0.1:5500/index.html#"><img src="./SM institute_files/insta.png"></a>
+        <a href="http://127.0.0.1:5500/index.html#"><img src="./SM institute_files/tt.png"></a>
+        <a href="http://127.0.0.1:5500/index.html#"><img src="./SM institute_files/ytube.png"></a>
+        <a href="http://127.0.0.1:5500/index.html#"><img src="./SM institute_files/linkedin.png"></a>
+      </div><br><br>
+      <p class="rights-text">Copyright © 2024 Created By Shakti Ginare, Minesh Jadhaw All Rights Reserved.</p>
+      <br><p><img src="./SM institute_files/location.png"> 01 near bus stop SM institute bhawarkua<br>Indore, Madhya Pradesh-455201</p><br>
+      <p><img src="./SM institute_files/phone.png"> +91-8827438483<br><img src="./SM institute_files/mail.png">&nbsp; shaktiginare@gmail.com</p>
+    </div>
+    <div class="right-col">
+      <h1 style="color: #fff">Our Newsletter</h1>
+      <div class="border"></div><br>
+      <p>Enter Your Email to get our News and updates.</p>
+      <form class="newsletter-form">
+        <input class="txtb" type="email" placeholder="Enter Your Email">
+        <input class="btn" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</footer>
+
+
+</body></html>
